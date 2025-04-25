@@ -112,7 +112,7 @@ const HeroOne = () => {
             delay: 0.8,
           }}
         >
-          <img src="/DancingGirl.png" alt="Dancing Figure" className="w-full h-full object-contain" />
+          <img src="/DancingGirl.https://drive.google.com/file/d/1Ao9pNVefoceQ7KQWSfWr2PtKtzjLBUm_/view?usp=sharing" alt="Dancing Figure" className="w-full h-full object-contain" />
         </motion.div>
       </div>
 
@@ -128,7 +128,7 @@ const HeroOne = () => {
             delay: 1.2,
           }}
         >
-          <img src="/BannerPattern.png" alt="Flower Banner" className="w-full h-full object-cover" />
+          <img src="https://drive.google.com/file/d/12U4ySnwtB0vncYWoMBhTMkHVFBCBG9jz/view?usp=sharing" alt="Flower Banner" className="w-full h-full object-cover" />
         </motion.div>
       </div>
 
