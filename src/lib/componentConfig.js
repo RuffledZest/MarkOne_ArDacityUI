@@ -104,5 +104,34 @@ export const componentConfig = [
       { name: 'speed', type: 'number', default: '2', description: 'Animation speed factor' },
       { name: 'backgroundColor', type: 'string', default: '#000000', description: 'Background color' }
     ]
+  },
+  {
+    id: 'message-signer',
+    name: 'MessageSigner',
+    category: 'Message Signer',
+    description: 'A beautiful, interactive message signing component with Lua code editor for React applications.',
+    packageName: '@ar-dacity/ardacity-message-signer',
+    importStatement: 'import { MessageSignerForm } from "@ar-dacity/ardacity-message-signer";',
+    component: 'MessageSignerForm',
+    props: [
+      { name: 'title', type: 'string', default: 'Message Signer', description: 'Title displayed at the top of the form' },
+      { name: 'description', type: 'string', default: 'Sign messages using Lua handlers', description: 'Description text displayed below the title' },
+      { name: 'initialLuaCode', type: 'string', default: '(Default Lua code)', description: 'Initial code to display in the Lua editor' },
+      { name: 'onSign', type: 'function', default: 'undefined', description: 'Callback function called when a message is signed' },
+      { name: 'className', type: 'string', default: '', description: 'Additional CSS classes to apply to the component' },
+      { name: 'style', type: 'object', default: '{}', description: 'Additional inline styles to apply to the component' }
+    ]
+  },
+  {
+    id: 'hero-one',
+    name: 'HeroOne',
+    category: 'Layout',
+    description: 'A stunning, animated hero section with Arweave wallet integration for React applications.',
+    packageName: '@ar-dacity/ardacity-hero-one',
+    importStatement: 'import { HeroOne } from "@ar-dacity/ardacity-hero-one";',
+    component: 'HeroOne',
+    props: [
+      { name: 'None', type: '', default: '', description: 'This component does not accept any props currently. Configuration is done by editing the component file.' }
+    ]
   }
 ]; 

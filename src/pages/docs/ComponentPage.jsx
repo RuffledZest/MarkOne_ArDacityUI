@@ -12,6 +12,8 @@ import PixelTransition from '../../components/ArDacityUi/PixelTransition/PixelTr
 import SplashCursor from '../../components/ArDacityUi/SplashCursor/SplashCursor';
 import Hyperspeed from '../../components/ArDacityUi/Hyperspeed/Hyperspeed';
 import Aurora from '../../components/ArDacityUi/Aurora/Aurora';
+import { MessageSignerForm } from '../../components/ArDacityUi/MessageSigner';
+import { HeroOne } from '../../components/ArDacityUi/HeroOne';
 
 const components = {
   'text-pressure': TextPressure,
@@ -19,7 +21,9 @@ const components = {
   'pixel-transition': PixelTransition,
   'splash-cursor': SplashCursor,
   'hyperspeed': Hyperspeed,
-  'aurora': Aurora
+  'aurora': Aurora,
+  'message-signer': MessageSignerForm,
+  'hero-one': HeroOne
 };
 
 // Example templates for each component
@@ -200,6 +204,56 @@ export default function HyperspeedExample() {
             speed={2}
             backgroundColor="#000000"
           />
+        </div>
+      )
+    }
+  },
+  'message-signer': {
+    basic: {
+      code: `import { MessageSignerForm } from "@ar-dacity/ardacity-message-signer";
+
+export default function MessageSignerExample() {
+  const handleSign = (result) => {
+    console.log('Message:', result.message);
+    console.log('Signature:', result.signature);
+    console.log('Lua Code:', result.luaCode);
+  };
+
+  return (
+    <MessageSignerForm 
+      title="Message Signer"
+      description="Sign messages using Lua handlers"
+      onSign={handleSign}
+      className="my-8"
+      style={{ maxWidth: '800px' }}
+    />
+  );
+}`,
+      component: (
+        <MessageSignerForm 
+          title="Message Signer"
+          description="Sign messages using Lua handlers"
+          onSign={(result) => console.log(result)}
+          className="my-8"
+          style={{ maxWidth: '800px' }}
+        />
+      )
+    }
+  },
+  'hero-one': {
+    basic: {
+      code: `import { HeroOne } from "@ar-dacity/ardacity-hero-one";
+
+export default function HeroOneExample() {
+  return (
+    <div className="w-full h-[600px] overflow-hidden">
+      <HeroOne />
+    </div>
+  );
+}`,
+      component: (
+        <div className="w-full h-[600px] overflow-hidden border border-gray-700 rounded-lg">
+          <HeroOne />
         </div>
       )
     }
