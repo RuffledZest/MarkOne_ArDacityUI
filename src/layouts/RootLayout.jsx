@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { Outlet, Link, useLocation } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import Aurora from '../components/ArDacityUi/Aurora/Aurora';
@@ -78,7 +79,7 @@ export default function RootLayout() {
           <Link to="/docs" className={`hover:text-gray-400 ${location.pathname.includes('/docs') ? 'text-indigo-400' : ''}`}>
             Documentation
           </Link>
-          <a href="https://github.com/YourUsername/ardacity-ui" target="_blank" rel="noreferrer" className="hover:text-gray-400">
+          <a href="https://github.com/RuffledZest/MarkOne_ArDacityUI" target="_blank" rel="noreferrer" className="hover:text-gray-400">
             GitHub
           </a>
         </div>
@@ -121,7 +122,7 @@ export default function RootLayout() {
               <p className="text-gray-400 mt-2">A collection of UI components for Arweave Ecosystem</p>
             </div>
             <div className="flex space-x-6">
-              <a href="https://github.com/YourUsername/ardacity-ui" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-white">
+              <a href="https://github.com/RuffledZest/MarkOne_ArDacityUI" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-white">
                 GitHub
               </a>
               <a href="https://twitter.com/ardacity" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-white">

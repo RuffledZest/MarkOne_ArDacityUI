@@ -89,7 +89,7 @@ export default function DocsIndex() {
         </p>
         <div className="flex flex-wrap gap-4">
           <a 
-            href="https://github.com/YourUsername/ardacity-ui/issues" 
+            href="https://github.com/RuffledZest/MarkOne_ArDacityUI/issues" 
             target="_blank" 
             rel="noreferrer"
             className="bg-gray-800 hover:bg-gray-700 text-white px-4 py-2 rounded-md transition-colors"

@@ -29,15 +29,19 @@ export default function Home() {
           <div className="flex flex-wrap justify-center gap-4">
             <Link
               to="/docs"
-              className="bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-3 px-6 rounded-lg transition-colors"
+              className="
+              bg-white text-black hover:bg-black hover:translate-y-[-10px] hover:text-white
+               transition-all duration-200  border border-white
+               font-medium py-3 px-6 rounded-lg "
             >
               Get Started
             </Link>
             <a
-              href="https://github.com/YourUsername/ardacity-ui"
+              href="https://github.com/RuffledZest/MarkOne_ArDacityUI"
               target="_blank"
               rel="noreferrer"
-              className="bg-gray-800 hover:bg-gray-700 text-white font-medium py-3 px-6 rounded-lg transition-colors"
+              className="bg-[#1b1b1b] hover:bg-gray-700 text-white font-medium py-3 px-6 rounded-lg hover:translate-y-[-10px] 
+               transition-all duration-200"
             >
               GitHub
             </a>
